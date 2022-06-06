@@ -1,0 +1,16 @@
+{
+  "name": "firstnodetut",
+  "version": "1.0.0",
+  "description": "it is my first node tutorial on 6/6/22",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Nabajyoti",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
