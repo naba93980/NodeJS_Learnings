@@ -1,5 +1,5 @@
 import sabkuch from 'url'
-// console.log(sabkuch);
+console.log(sabkuch);
 // console.log(sabkuch.URL);
 // console.log(URL);
 const newurl = new URL('https://www.youtube.com/watch?v=iwolPf6kN-k');
