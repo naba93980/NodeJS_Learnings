@@ -8,6 +8,7 @@ npm install g nodemon - install nodemon package globally
 npm install  nodemon - install nodemon package locally for this package
 npm install --save-dev nodemon - install nodemon package locally as development dependency
 npm unistall nodemon - uninstall nodemon package
+npm start - script in package.json file that starts the execution of specified file
 
 package.json - tells about info about the package like name,version,author,scripts,dependencies etc.
 package-lock.json - gives exact tree of dependencies of the packages including nested dependencies
