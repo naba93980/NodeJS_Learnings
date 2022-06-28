@@ -15,12 +15,10 @@ server.on("request", (request, response) => {
         else {
             response.statusCode = 404;
             response.end('<h1>not found</h1>');           
-        }
-        
+        }        
     }
     server.close((err) => {
-            console.log("server is closed bye bye");
-        
+            console.log("server is closed bye bye");        
         })
 })
 
