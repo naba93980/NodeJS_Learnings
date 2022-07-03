@@ -12,3 +12,13 @@ npm start - script in package.json file that starts the execution of specified f
 
 package.json - tells about info about the package like name,version,author,scripts,dependencies etc.
 package-lock.json - gives exact tree of dependencies of the packages including nested dependencies
+
+// GLOBALS — NO WINDOW !!!!
+
+// __dirname - path to current directory
+// __filename - file name
+// require - function to use modules (Common]S)
+// module - info about current module (file)
+// process - info about env where the program is being executed
+
+//all the 5 above are present in module scope supplied by node while creating the module wrapper function
