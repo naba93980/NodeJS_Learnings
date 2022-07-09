@@ -4,6 +4,7 @@ node filename.js - runs module
 node --version - shows node version installed
 npm --version - shows npm version installed
 npm init - This utility will walk you through creating a package.json file.
+npm install - it installs node modules specified as per in package.json and package-lock.json
 npm install g nodemon - install nodemon package globally
 npm install  nodemon - install nodemon package locally for this package
 npm install --save-dev nodemon - install nodemon package locally as development dependency
@@ -31,6 +32,7 @@ package-lock.json - gives exact tree of dependencies of the packages including n
 // npm i <packageName>
 
 // global dependency - use it in any project
+//C:\Users\NABAJYOTI\AppData\Roaming\npm - location where modules are getting installed globally
 // npm install -g <packageName>
 
 // package.json - manifest file (stores important info about project/package)'
