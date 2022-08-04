@@ -1,0 +1,17 @@
+{
+  "name": "check",
+  "version": "1.0.0",
+  "description": "",
+  "main": "check.js",
+  "dependencies": {
+    "node-fetch": "^3.2.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
