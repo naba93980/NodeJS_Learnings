@@ -1,0 +1,7 @@
+//Writable
+//Readable
+//Duplex - both read and write
+//Transform - data can be modified while writin or reading
+
+//Stream class extends Event Emmiter class
+
