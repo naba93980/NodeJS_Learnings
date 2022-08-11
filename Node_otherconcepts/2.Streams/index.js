@@ -6,7 +6,10 @@ var mywriteStream2 = fs.createWriteStream(__dirname +'/writepipenode.txt', 'utf-
 myreadStream.on('data', (chunk) => {
     console.log( "-new chunk received-" );
     // console.log(chunk);
-    mywriteStream.write(chunk);
+    mywriteStream.write(chunk, () => {
+        console.log( "chunk written" );
+        
+    });
     
 })
 
