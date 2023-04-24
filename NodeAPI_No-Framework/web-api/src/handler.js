@@ -1,13 +1,14 @@
 import { parse } from "node:url";
 import { DEFAULT_HEADER } from "./util/util.js";
+import { routes } from "./routes/heroRoutes.js";
+
+const heroRoutes = routes({
+    heroService: {}
+})
 
 const allRoutes = {
 
-    '/heroes:get': (request, response) => {
-        throw new Error('tessssst')
-        response.write('GET')
-        response.end()
-    },
+    ...heroRoutes,
 
     // 404 routes
     default: (request, response) => {

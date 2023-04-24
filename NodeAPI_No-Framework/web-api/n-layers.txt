@@ -4,13 +4,19 @@ database -
     - a file that stores all application data
 src - all source code
     - entities - object mappings
+    - utilities - shared code 
     - factories - instance generators
     - repositories - data access (data layer)
-    - routes - endpoint mappings (application server)
     - services - communication between the routes and repositories layer
-    - utilities - shared code 
+    - routes - endpoint mappings (application server)
     - handler - communication between routes and server (application server)
     - index.js - server instance (no need if it is just api server & has no presentation layer)
+
+
+handler communicate with server(index.js file) and routes
+routes communicate with services
+services helps communication between routes  and repositories
+
 
 tests - all automated test suites
     - integration tests - testing on the user point of view. it is also and E2E test because
