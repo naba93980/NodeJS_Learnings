@@ -3,7 +3,7 @@ N-layers
 database - 
     - a file that stores all application data
 src - all source code
-    - entities - object mappings
+    - entities - object mappings (like model)
     - utilities - shared code 
     - factories - instance generators
     - repositories - data access (data layer)
@@ -16,6 +16,9 @@ src - all source code
 handler communicate with server(index.js file) and routes
 routes communicate with services
 services helps communication between routes  and repositories
+repository communicate with databasefile
+
+index.js <-> handler <-> routes <-> services <-> repositories <-> databasefile
 
 
 tests - all automated test suites
