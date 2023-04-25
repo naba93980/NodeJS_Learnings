@@ -1,10 +1,15 @@
 import { parse } from "node:url";
 import { DEFAULT_HEADER } from "./util/util.js";
 import { routes } from "./routes/heroRoutes.js";
+import { generateInstance } from "./factories/heroFactory.js"
+import { join, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-const heroRoutes = routes({
-    heroService: {}
-})
+const currentDir = dirname(fileURLToPath(import.meta.url))
+const filePath = join(currentDir, '../database', 'data.json')
+
+const heroService = generateInstance({ filePath })
+const heroRoutes = routes({ heroService })
 
 const allRoutes = {
 
@@ -31,7 +36,7 @@ function handler(req, res) {
 
     const key = `${pathname}:${method.toLowerCase()}`
     const chosen = allRoutes[key] || allRoutes.default              // 2 decides which controller to call
-    
+
     return new Promise((resolve, reject) => resolve(chosen(req, res))).catch(handlerError(res))       // 3 async handler returns promise, then runs the controller through the promise executor
 
 }
